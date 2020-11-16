@@ -1,7 +1,139 @@
+.footer_top_menu {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.footer_top_menu_list {
+    display: block;
+    width: 50%;
+    height: 100%;
+    background-color: var(--color-green);
+    text-align: center;
+    padding: 50px 0;
+    box-sizing: border-box;
+}
+
+.footer_top_menu_list:last-child {
+    background-color: var(--color-dark-green);
+} 
+
+.footer_top_menu_list > a {
+    width: 100%;
+    height: 100%;
+}
+
+.footer_top_menu_list > a > span {
+    border-bottom: 3px dotted white;
+}
+
+.footer_top_menu_list > a > i, .footer_top_menu_list >a > span {
+    color: white;
+}
+
+/*  */
+
+.footer_info {
+    width: 100%;
+
+     height: auto;
+     background-color: var(--color-light-green);
+
+     padding: 60px 8.3333vw 40px 8.3333vw;
+box-sizing: border-box; }
+
+.footer_info_inner {
+    width: 100%;
+    height: 100%;
+
+}
+
+.footer_info_inner > span, .footer_info_inner > address, .footer_info_inner > p, .footer_info_inner > a, .footer > .footer_info_inner > button{
+    color: white;
+}
+
+.footer_company_info {
+    width: 100%;
+    height: 100%;
+  
+    display: flex;
+    align-items: center;
+
+}
+
+.footer_company_info_list:first-child {
+width: auto;
+    height: auto;
+
+}
+
+.footer_company_info_list:first-child > img {
+    height: auto;
+}
+
+.footer_company_info_list:nth-child(2) {
+    color:white;
+
+    word-break: keep-all;
+
+    /* 12 */
+}
+
+.footer_company_info_list:nth-child(2) > span {
+    display: block;
+    width:auto;
+    height: auto;
+    color: white;
+ 
+} 
+/* 주소, 번호 */
+
+
+.footer_company_info_list:nth-child(3){
+
+    word-break: keep-all;
+    text-decoration: underline;
+}
+/* 프라이버시 */
+
+.footer_company_info_list:nth-child(3) > a {
+    width: auto;
+    height: auto;
+    color: white;
+
+}
+
+.footer_company_info_list:last-child > button{
+
+    border: 1px solid white;
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+ 
+}
+
+.footer_company_info_list:last-child > button > img {
+
+    height: auto;
+
+}
+/* mail */
+
+.footer_info_inner > p {
+    font-size: 12px;
+}
 
 .topBtn {
     width: auto;
     height: auto;
     color: white;
     position: absolute;
+    bottom: 30px;
+right: 40px;
 }
+
+.topBtn > i {
+    font-size: 32px;
+    }

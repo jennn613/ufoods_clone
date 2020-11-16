@@ -1,1 +1,76 @@
-@media only screen and (min-width: 768px) and (max-width: 1024px) {}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    
+    /* 780 기준 */
+    
+.footer_top_menu {
+    max-width: 1024px;
+}
+
+.footer_top_menu_list > a > i {
+    /* margin-right: 60px; */
+    margin-right: 5vw;
+}
+
+/*  */
+
+.footer_info {
+
+    max-width: 1024px;
+     padding: 5.1282vw 2.5641vw 0  2.5641vw;
+     padding: 40px 20px;
+}
+
+.footer_company_info {
+    margin-bottom: 80px;
+}
+
+.footer_company_info_list:first-child {
+    margin-right: 3.8462vw;
+    /* 30 */
+}
+
+.footer_company_info_list:first-child > img {
+    width: 140px;
+}
+
+.footer_company_info_list:nth-child(2) {
+
+    margin-right: 6.4103vw;
+    /* 50 */
+    font-size: 12px;
+    /* 12 */
+}
+
+.footer_company_info_list:nth-child(2) > span {
+    margin-bottom: 10px;
+} 
+/* 주소, 번호 */
+
+.footer_company_info_list:nth-child(2) > address {
+    line-height: 160%;
+}
+
+
+.footer_company_info_list:nth-child(3){
+    margin-right: 4.1667vw;
+    /* 50 */
+    font-size: 12px;
+    /* 12 */
+
+}
+/* 프라이버시 */
+
+.footer_company_info_list:last-child > button{
+    width: 180px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.footer_company_info_list:last-child > button > img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+
+}
