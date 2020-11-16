@@ -1,0 +1,57 @@
+@import "./reset.css";
+@import "../style/style.css";
+@import "../style/mobile.css";
+@import "../style/tablet.css";
+@import "../style/pc.css";
+/* @import "https://fonts.googleapis.com/earlyaccess/notosansjapanese.css"; */
+
+body{
+  font-family: 'Noto Sans Japanese', sans-serif;
+}
+
+:root {
+
+    /* font size */
+--font-h1:30px;
+--font-h1: 20px;
+--font-big: 18px;
+--font-normal: 16px;
+--font-small: 14px;
+--font-micro: 12px;
+
+
+    /* font weight */
+
+    --weight-bold: 700;
+    --weight-meidum: 500;
+    --weight-regular: 400;
+    --weight-light: 300;
+
+    /* colors */
+
+    --color-letter:#131313;
+    --color-grey:#ebebeb;
+    --color-lightgrey: #f3f3f3;
+    --color-dark-green:#2d7d3e;
+    --color-green:#2A8742;
+    --color-light-green:#379244;
+    --color-blue:#257F7D;
+    --color-red:#CF482A;
+    --color-orange:#915932;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a {
+    color: var(--color-letter);
+}
+
+#wrap {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.hidden {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
