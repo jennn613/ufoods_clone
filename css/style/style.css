@@ -12,6 +12,7 @@
     text-align: center;
     padding: 50px 0;
     box-sizing: border-box;
+    font-size: 16px;
 }
 
 .footer_top_menu_list:last-child {
@@ -106,7 +107,6 @@ width: auto;
 .footer_company_info_list:last-child > button{
 
     border: 1px solid white;
- 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,7 +115,6 @@ width: auto;
 }
 
 .footer_company_info_list:last-child > button > img {
-
     height: auto;
 
 }
@@ -130,8 +129,7 @@ width: auto;
     height: auto;
     color: white;
     position: absolute;
-    bottom: 30px;
-right: 40px;
+
 }
 
 .topBtn > i {

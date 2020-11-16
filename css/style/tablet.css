@@ -14,10 +14,9 @@
 /*  */
 
 .footer_info {
-
     max-width: 1024px;
-     padding: 5.1282vw 2.5641vw 0  2.5641vw;
-     padding: 40px 20px;
+     padding: 7.6923vw 7.6923vw 30px 7.6923vw;
+     /* padding: 60px */
 }
 
 .footer_company_info {
@@ -71,6 +70,15 @@
     width: 20px;
     margin-right: 10px;
 }
+
+.topBtn {
+    bottom: 10px;
+right: 40px;
+}
+
+.topBtn > i {
+    font-size: 28px;
+    }
 
 
 }

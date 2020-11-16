@@ -85,6 +85,10 @@
 .footer_info_inner > p {
     font-size: 12px;
 }
+.topBtn{
 
+bottom: 30px;
+right: 40px;
+}
 
 }
