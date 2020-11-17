@@ -1,12 +1,38 @@
 @media only screen and (min-width: 320px) and (max-width: 767px) {
 /* 360 */
 
+/* safety */
+.article_safety {
+    flex-direction: column-reverse;
+}
+
+.safety_text {
+    width: 100%;
+    margin:0;   
+  
+    }
+
+    .safety_img{
+        width: 100%;
+        margin:0;
+        align-items: flex-start;
+        box-sizing: border-box;
+
+    }
+
+    .safety_img >img:first-of-type {
+
+        margin-bottom: 10px;
+    }
+
+    .imgIcon {
+        align-items: center;
+    }
 /* news */
 
 .article_news_inner {
     height: auto;
     flex-direction: column;
-
 }
 
 .news_title {
