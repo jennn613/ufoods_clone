@@ -1,4 +1,7 @@
 @media only screen and (min-width: 1025px) {
+
+/* news */
+
 /* footer */
 
 .footer_top_menu {
@@ -43,7 +46,7 @@
     margin-right: 6.6667vw;
     /* 80 */
 
-    font-size: 12px;
+    font-size: 14px;
     /* 12 */
 }
 
@@ -61,7 +64,7 @@
 .footer_company_info_list:nth-child(3){
     margin-right: 4.1667vw;
     /* 50 */
-    font-size: 12px;
+    font-size: 14px;
     /* 12 */
 
 }
@@ -72,7 +75,7 @@
     height: 40px;
     border-radius: 10px;
 
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .footer_company_info_list:last-child > button > img {
@@ -81,6 +84,14 @@
     margin-right: 10px;
 }
 /* mail */
+
+.footer_diagonalBox {
+    width: 120px;
+    height: 290px;
+bottom: -110px;
+
+}
+
 
 .footer_info_inner > p {
     font-size: 12px;

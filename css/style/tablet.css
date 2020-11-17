@@ -1,7 +1,28 @@
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     
     /* 780 기준 */
+
+
+    /* news */
+    .news_contents_info_list {
+        margin-left: 8%;
+    }
+
+    .news_contents_info_list > time {
+        font-size: 14px;
+        margin-right: 2.56410vw;
+    }
+   
+    .news_contents_info_list > a:first-of-type {
+        font-size: 10px;
+        margin-right: 2.56410vw;
+    }
+    .news_contents_info_list > a:last-of-type {
+        font-size: 12px;
+
+    }
     
+
 .footer_top_menu {
     max-width: 1024px;
 }

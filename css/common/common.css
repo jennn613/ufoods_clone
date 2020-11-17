@@ -42,6 +42,7 @@ body{
 
 h1, h2, h3, h4, h5, h6, p, span, a {
     color: var(--color-letter);
+    font-weight: var(--weight-meidum);
 }
 
 
@@ -85,7 +86,7 @@ h1, h2, h3, h4, h5, h6, p, span, a {
 }
 
 .article_home_img {
-    width:100%;
+width:100%;
 height: auto;
 background-color: hotpink;
 }
@@ -93,7 +94,8 @@ background-color: hotpink;
 .article_news {
     width: 100%;
     height: auto;
-    background-color: indianred;
+    background-color: var(--color-lightgrey);
+    position: relative;
 }
 
 .article_safety {
@@ -113,6 +115,7 @@ background-color: hotpink;
     height: auto;
     background-color: #915932;
     position: relative;
+    overflow: hidden;
 }
 
 img {
