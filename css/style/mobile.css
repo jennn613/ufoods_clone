@@ -1,5 +1,12 @@
 @media only screen and (min-width: 320px) and (max-width: 767px) {
 /* 360 */
+
+/* nav */
+
+#header {
+    display: none;
+}
+
 /* home */
 
 .home_img_logo{
@@ -8,7 +15,7 @@
 }
 
 .home_img_logo > img {
-    width: 90px;
+    width: 80px;
 }
 
 .home_img_text > img {

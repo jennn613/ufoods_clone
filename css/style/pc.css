@@ -1,9 +1,22 @@
 @media only screen and (min-width: 1025px) {
 
 /* home */
+
+#header {
+    min-width: 1000px;
+}
 .home_img_logo {
     width: 260px;
     height: 260px;}
+
+.header_nav_contacts_icon {
+    display: none;
+}
+
+
+.header_menu_toggle_btn {
+    display: none;
+}
 /* news */
 
 /* footer */
