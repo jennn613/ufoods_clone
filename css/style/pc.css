@@ -1,5 +1,9 @@
 @media only screen and (min-width: 1025px) {
 
+/* home */
+.home_img_logo {
+    width: 260px;
+    height: 260px;}
 /* news */
 
 /* footer */

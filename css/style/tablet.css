@@ -1,7 +1,40 @@
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     
     /* 780 기준 */
+/* home */
 
+
+.home_img_logo > img {
+    width: 110px;
+}
+
+.home_img_indicator_list > a {
+    width: 10px;
+    height: 10px;
+}
+
+.home_img_company_intro {
+    width: 200px;
+    height: 200px;
+    right: 10%;
+    bottom: -100px;
+}
+
+.home_img_company_intro > a >img {
+    width: 50px;
+    height: auto;
+    position: absolute;
+    left:38%;
+    bottom: 150px;
+}
+
+.home_img_company_intro > a > span {
+    font-size: 10px;
+    border-bottom: 2px dotted var(--color-green);
+    left:23%;
+    bottom: 110px;
+    line-height: 150%;
+}
 /* safety */
 
 .safety_text {
