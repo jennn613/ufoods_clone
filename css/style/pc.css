@@ -70,7 +70,7 @@
 }
 /* 프라이버시 */
 
-.footer_company_info_list:last-child > button{
+.footer_company_info_list:last-child > a{
     width: 220px;
     height: 40px;
     border-radius: 10px;
@@ -78,7 +78,7 @@
     font-size: 14px;
 }
 
-.footer_company_info_list:last-child > button > img {
+.footer_company_info_list:last-child > a > img {
     width: 20px;
 
     margin-right: 10px;

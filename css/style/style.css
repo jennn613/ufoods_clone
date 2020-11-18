@@ -5,7 +5,6 @@
 .safety_text {
     width: 40%;
     height: auto;
-    background-color: tomato;
     margin: 150px 0 150px 40px;
 }
 
@@ -22,6 +21,7 @@
 .safety_text > p {
     line-height: 220%;
 font-size: 16px;
+word-break: keep-all;
 }
 
 .safety_img {
@@ -46,13 +46,24 @@ font-size: 16px;
     height: auto;
 }
 
+.safety_text > a {
+    width: auto;
+    height: auto;
+}
+
+
+.safety_text > a > img {
+    margin-top: 40px;
+    width: 190px;
+}
+
 .imgIcon{
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
-    background-color: thistle;
+
 }
 
 .imgIcon > span {
@@ -281,19 +292,22 @@ width: auto;
 
 }
 
-.footer_company_info_list:last-child > button{
-
+.footer_company_info_list:last-child > a {
     border: 1px solid white;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
- 
+ cursor: pointer;
 }
 
-.footer_company_info_list:last-child > button > img {
+.footer_company_info_list:last-child > a > img {
     height: auto;
+}
 
+.footer_company_info_list:last-child > a:hover {
+    opacity: 0.7;
+    transition:all 160ms ease-in;
 }
 /* mail */
 

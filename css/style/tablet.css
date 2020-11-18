@@ -2,6 +2,8 @@
     
     /* 780 기준 */
 
+/* safety */
+
 
     /* news */
     .news_contents_info_list {
@@ -80,14 +82,14 @@
 }
 /* 프라이버시 */
 
-.footer_company_info_list:last-child > button{
+.footer_company_info_list:last-child > a{
     width: 180px;
     height: 40px;
     border-radius: 10px;
     font-size: 12px;
 }
 
-.footer_company_info_list:last-child > button > img {
+.footer_company_info_list:last-child > a > img {
     width: 20px;
     margin-right: 10px;
 }
