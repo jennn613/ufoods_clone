@@ -4,6 +4,27 @@
 
 /* safety */
 
+.safety_text {
+    margin: 120px 0 120px 50px;
+}
+
+.safety_img {
+
+    margin-right: 50px;
+
+}
+
+/* works */
+
+.works_work > li {
+    width: 90px;
+    margin-right: 8px;
+    font-size: 12px;
+}
+
+.works_img {
+    margin-top: 140px;
+}
 
     /* news */
     .news_contents_info_list {

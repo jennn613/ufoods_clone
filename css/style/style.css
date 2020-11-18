@@ -1,11 +1,18 @@
 /* nav */
 /* home */
 /* safety */
+.safety_inner {
+    max-width: 1400px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+}
 
 .safety_text {
     width: 40%;
     height: auto;
-    margin: 150px 0 150px 40px;
+    margin: 180px 0 150px 40px;
 }
 
 .safety_text > span{
@@ -19,7 +26,7 @@
 }
 
 .safety_text > p {
-    line-height: 220%;
+    line-height: 260%;
 font-size: 16px;
 word-break: keep-all;
 }
@@ -31,7 +38,7 @@ word-break: keep-all;
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
-    margin-right: 40px;
+    margin: 120px 40px 50px 0;
 
 }
 
@@ -79,10 +86,107 @@ word-break: keep-all;
 }
 /* work */
 
-.work_text {
+.works_inner {
+    max-width: 1400px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.works_text {
     width: 40%;
     height: auto;
-    background-color: tomato;
+    margin: 100px 40px 150px 0;
+}
+
+.works_text > span{
+    display: block;
+    line-height: 180%;
+    margin: 30px 0;
+    font-size: 28px;
+    font-weight: var(--weight-bold);
+    color: var(--color-green);
+    
+}
+
+.works_text > p {
+line-height: 260%;
+font-size: 16px;
+word-break: keep-all;
+}
+
+.works_work {
+    display: block;
+    width: auto;
+    height: auto;
+    display: flex;
+}
+
+.works_work > li {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    color: white;
+    margin-right: 0.7813vw;
+    /* 10 */
+    margin-bottom: 30px;
+}
+
+.works_work > li:first-of-type {
+ background-color: var(--color-light-green);
+}
+.works_work > li:nth-of-type(2) {
+ background-color: var(--color-red);
+}
+.works_work > li:nth-of-type(3) {
+ background-color: var(--color-blue);
+}
+.works_work > li:last-of-type {
+ background-color: var(--color-orange);
+}
+
+
+
+.works_img {
+    width: 46%;
+    height: auto;
+    margin: 120px 0 50px 40px;
+}
+
+.works_img >img:first-of-type {
+    float: left;
+    width: 48%;
+    height: auto;
+    margin-bottom: 20px;
+margin-right: 4%;
+}
+
+.works_img >img:nth-of-type(2) {
+    float: left;
+    width: 48%;
+    height: auto;
+}
+
+.works_img >img:last-of-type{
+    width: 100%;
+    height: auto;
+}
+
+.works_text > a {
+    width: auto;
+    height: auto;
+}
+
+
+.works_text > a > img {
+    margin-top: 40px;
+    width: 190px;
 }
 
 /* news */

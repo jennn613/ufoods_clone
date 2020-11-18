@@ -100,19 +100,16 @@ background-color: hotpink;
 .article_safety {
     width: 100%;
     height: auto;
-display: flex;
 }
 
 .article_works {
     width: 100%;
     height: auto;
-    background-color: #257F7D;
 }
 
 #footer {
     width: 100%;
     height: auto;
-    background-color: #915932;
     position: relative;
     overflow: hidden;
 }
