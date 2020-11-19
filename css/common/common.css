@@ -61,6 +61,11 @@ h1, h2, h3, h4, h5, h6, p, span, a {
 
   a {display: block;}
 
+  a:focus, button:focus {
+padding: 2px;
+outline: black solid 1px;
+border: none;
+  }
 
 #wrap {
     width: 100%;
