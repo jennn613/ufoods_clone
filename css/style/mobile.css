@@ -10,7 +10,7 @@
 .header_toggle_btn_open{
     width: 100%;
     height: 100%;
-    display: block;
+    display: none;
     position: relative;
     position: fixed;
     top: 0;
@@ -18,11 +18,6 @@
     background-color: var(--color-green);
     z-index: 10000;
     overflow-y: hidden;
-}
-
-.header_toggle_btn_open.open {
-    background-color: white;
-    color: var(--color-green);
 }
 
 .header_toggle_menu_logo {
@@ -53,9 +48,11 @@
     font-weight: var(--weight-semi-bold);
 }
 
+
 .header_toggle_menu > li:not(:last-child) {
     margin-bottom: 50px;
 }
+
 
 /* home */
 
