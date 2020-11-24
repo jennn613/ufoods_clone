@@ -5,17 +5,14 @@
     /* nav */
 
     .header_nav_menu{
+        /* font-size: 12px; */
         font-size: 12px;
-        margin-right: 6.4103vw;
-        /* 50 */
+        margin-right: 5.128205vw;
+        /* 40 */
         padding: 0 20px;
+        word-break: keep-all;
     }
 
-    .header_logo > a > img {
-        width: 140px;
-        height: auto;
-        margin-right: 20px;
-    }
 
     .header_nav_menu_list:not(:last-child){
         margin-right: 24px;
@@ -25,15 +22,24 @@
       display: none;
     }
 
-    .header_nav_contacts_icon_list:not(last-child){
+    .header_nav_contacts_icon_list:not(:last-child){
         margin-right:3.0769vw;
         /* margin-right: 24px; */
     }
 
-    .header_menu_toggle_btn {
+    .header_toggle_btn {
         display: none;
     }
 
+    .header_logo > a > img {
+        width: 10.869565vw;
+        /* 920 기준 100px */
+    }
+
+    .header_nav_contacts_icon_list > a >img {
+        width: 30px;
+    }
+    
 
 /* home */
 
