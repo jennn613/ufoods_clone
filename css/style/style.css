@@ -26,6 +26,11 @@
 .header_logo {
     width: auto;
     height: auto;
+    opacity: 1;
+}
+.header_logo.hideAction {
+    opacity: 0;    
+    transition:opacity 500ms linear;
 }
 
 .header_logo > a {
@@ -278,14 +283,12 @@
     position: absolute;
     top:0;
     left:0;
-   overflow: hidden;
-   background-image: url('../img/salad.jpg');
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center;
+    background-image: url('../img/banner-01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
 }
-
-
 
 /* news */
 

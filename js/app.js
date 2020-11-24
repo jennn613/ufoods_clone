@@ -1,3 +1,5 @@
+'use strict';
+
 function mediaSize() { 
     if ( window.matchMedia('(min-width: 320px) and (max-width: 767px)').matches ) {
         // console.log('Mobile');
