@@ -21,6 +21,7 @@
     padding: 0 32px;
     box-sizing: border-box;
     margin-right: 80px;
+    transition:all 200ms linear;
 }
 
 .header_logo {
@@ -28,9 +29,19 @@
     height: auto;
     opacity: 1;
 }
-.header_logo.hideAction {
-    opacity: 0;    
-    transition:opacity 500ms linear;
+
+.header_nav_menu.show {
+    width: auto;
+}
+
+.header_logo > a > img.hideAction {
+    width: 0; 
+    transition:width 200ms ease-in;
+}
+
+.header_logo > a > img.showAction {
+    width: 100px; 
+    transition:width 200ms ease-in;
 }
 
 .header_logo > a {
