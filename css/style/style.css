@@ -252,8 +252,9 @@
 }
 
 .home_img_company_intro > a {
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
 }
 .home_img_company_intro > a > img {
   width: 50px;
@@ -262,6 +263,7 @@
   left: 39%;
   bottom: 170px;
 }
+
 .home_img_company_intro > a > span {
   display: block;
   width: auto;
@@ -612,7 +614,6 @@
   text-align: center;
   font-size: 16px;
   padding: 50px 0;
-  box-sizing: border-box;
   cursor: pointer;
 }
 

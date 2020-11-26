@@ -32,14 +32,14 @@ export function headerLogoShow(){
 export function homeIntroMove(){
 
     homeIntro.addEventListener('mouseenter', ()=> {
-
+ 
         homeIntro.style.transform = 'translateY(-10px)';
         homeIntro.style.transition = 'all 400ms ease-in';
         
     });
 
     homeIntro.addEventListener('mouseleave', ()=> {
-
+ 
         homeIntro.style.transform = 'translateY(0)';
         homeIntro.style.transition = 'all 400ms ease-in';
         
@@ -56,7 +56,7 @@ export function homeIntroMove(){
     const indicator = indicatorWrap.querySelectorAll('li'); //indicator
     let picNum = 4; //home 사진 개수
     let idx = 0;
-    let time = 3000;
+    let time = 2000;
 
     export function homeImgShow(){
 
@@ -115,10 +115,10 @@ export function homeIntroMove(){
                     }
                 });
         
-            }, time);
+            }, time * 2);
         
         
-        }, time + 200);
+        }, time * 2 + 200);
     }
    
 
@@ -191,3 +191,23 @@ export function imgBtnMove(){
             window.scrollTo({top: 0, behavior:'smooth'});
         });
     }
+
+    // focus 
+
+ /* let a = document.querySelectorAll('a');
+
+ export function aFocus(){
+
+  a.forEach((a)=>{
+
+    a.addEventListener('focus', ()=>{
+a.classList.add('focus');
+    });
+
+    a.addEventListener('focusout', ()=>{
+a.classList.remove('focus');
+    });
+
+  });
+
+ } */

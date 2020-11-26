@@ -30,6 +30,7 @@ function mediaSize() {
         homeIntroMove();
         imgBtnMove();
         toTheTop();
+        //aFocus();
     }
 };
 
