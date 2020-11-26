@@ -61,19 +61,24 @@ const imgBtn = document.querySelectorAll('.imgBtn'); //img button
     let i = 0;
 
     homeImg.forEach((img, i)=> {
-        // img.style.transition =`all ${time}ms linear`;
         img.style.zIndex = homeImg.length - i;
         homeImg[0].style.zIndex = 100;
     });
     
-    setInterval(()=> {
+    setInterval(()=> {        
+        
+        indicator.forEach((indi)=>{
+            indi.classList.remove('active');
+        });
+    
+        indicator[idx].classList.add('active');
+        
         homeImg[idx].style.transition =`all ${time}ms linear`;
         homeImg[idx].style.transform = 'scale(1.3)';
         homeImg[idx].style.opacity = '0';
     
         setTimeout( ()=>{
-    
-            // homeImg[idx].style.display = 'none';
+
             let prePic =  idx;
 
             homeImg[prePic].style.zIndex = 0;
@@ -85,91 +90,27 @@ const imgBtn = document.querySelectorAll('.imgBtn'); //img button
                     img.style.zIndex = homeImg.length - i;
                 });
             }
+                  
+
 
             if(idx >= homeImg.length){    
                 idx=0;
-
-                
+                indicator[idx].classList.add('active');
             } 
     
             homeImg.forEach( (img, i)=> {
-
                 if(i !== prePic){
                     homeImg[idx].style.zIndex = 100;
                     img.style.transition = 'none';
                     img.style.transform = 'scale(1)';
                     img.style.opacity = 1;          
-                    // img.style.display = 'block'; 
                 }
             });
     
-        }, time *2);
+        }, time);
     
     
-    }, time *2 + 200);
-    // ===============================================================
-
-// homeImg.forEach((img, i)=> {
-//     img.style.transition = `all ${time} linear`;
-//     img.style.zIndex = homeImg.length - i;
-// });
-
-// homeImg[0].style.zIndex = 100;
-
-// setInterval(()=>{
-
-//     homeImg[i].style.transform = 'scale(1.3)';
-//     homeImg[i].style.opacity = 0;
-    
-//     setTimeout(() => {
-//         homeImg[i].style.display = 'none';
-        
-//     }, time + 1100);
-
-
-// }, time + 1000);
-
-//===================================================================
-// homeImg.forEach( (img, i)=> {
-//     img.style.transition =`all ${time}ms linear`;
-//     img.style.zIndex = homeImg.length - i;
-//     homeImg[0].style.zIndex = 100;
-// });
-
-// setInterval(()=> {
-
-//     homeImg[idx].style.transform = 'scale(1.3)';
-//     homeImg[idx].style.opacity = '0';
-
-//     setTimeout( ()=>{
-
-//         homeImg[idx].style.display = 'none';
-//         let prePic =  idx;
-
-
-//         homeImg[prePic].style.zIndex = 0;
-
-//         idx++;
-//         if(idx >= homeImg.length){    
-//             idx=0;    
-//         } 
-
-//         homeImg.forEach( (img, i)=> {
-//             if(i !== prePic){
-//                 img.style.zIndex = homeImg.length - i;  
-//                 homeImg[idx].style.zIndex = 100;
-//                 img.style.transform = 'scale(1)';
-//                 img.style.opacity = 1;          
-//                 img.style.display = 'block'; 
- 
-//             }
-//         });
-
-//     }, time + 100);
-
-
-// }, time + 200);
-
+    }, time + 200);
 
     // contents fade in 
 
