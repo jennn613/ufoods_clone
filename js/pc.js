@@ -40,63 +40,138 @@ const imgBtn = document.querySelectorAll('.imgBtn'); //img button
         
     });
 
-    //slider 
 
-    const homeImg = document.querySelector('.home_backgorund_img');
+//1. scale(1.2) > 2.opacity 0.2 & 다른 사진 미리 뒤에 보여야함 > 3. 다른 사진 z-index 주기  
+// 반복
+
+    const homeImgWrap = document.querySelector('.homeImg'); // img 감싼 div
+    const homeImg = homeImgWrap.querySelectorAll('.home_background_img'); // 배경 이미지 삽입할 div
     const indicatorWrap = document.querySelector('.home_img_indicator_wrap'); //indi 감싼 ul
     const indicator = indicatorWrap.querySelectorAll('li'); //indicator
     let picNum = 4; //home 사진 개수
     let idx = 0;
-    
-    indicator.forEach((indi)=>{
-indi.classList.remove('active');
-    });
-
-    indicator[idx].classList.add('active');
-
-function homeImgChange(){
-
-    homeImg.style.transition = 'all 1800ms linear';
+    let time = 3000;
 
     indicator.forEach((indi)=>{
         indi.classList.remove('active');
-            });
+    });
 
     indicator[idx].classList.add('active');
-
-    function fadeOut() {
-        homeImg.style.transform = 'scale(1.2)';
-        homeImg.style.opacity = 0.3;
-    }
     
-setTimeout(() => {
-    homeImg.style.backgroundImage = "url('../css/img/banner-02.jpg')";
-    fadeOut();
-}, 3000);
+    let i = 0;
 
-setTimeout(() => {
-    homeImg.style.backgroundImage = "url('../css/img/banner-03.jpg')";
-    fadeOut();
-}, 6000);
-
-setTimeout(() => {
-    homeImg.style.backgroundImage = "url('../css/img/banner-04.jpg')";
-    fadeOut();
-}, 8000);
-
-
-   // for(let i=1; i<=picNum; i++){
-
-   // homeImg.style.backgroundImage = "url('../css/img/banner-0"+i+".jpg')";
-//}
-
-
-}
-    homeImgChange();
+    homeImg.forEach((img, i)=> {
+        // img.style.transition =`all ${time}ms linear`;
+        img.style.zIndex = homeImg.length - i;
+        homeImg[0].style.zIndex = 100;
+    });
     
+    setInterval(()=> {
+        homeImg[idx].style.transition =`all ${time}ms linear`;
+        homeImg[idx].style.transform = 'scale(1.3)';
+        homeImg[idx].style.opacity = '0';
+    
+        setTimeout( ()=>{
+    
+            // homeImg[idx].style.display = 'none';
+            let prePic =  idx;
+
+            homeImg[prePic].style.zIndex = 0;
+    
+            idx++;
+
+            if(idx >= homeImg.length -1){
+                homeImg.forEach((img, i)=>{
+                    img.style.zIndex = homeImg.length - i;
+                });
+            }
+
+            if(idx >= homeImg.length){    
+                idx=0;
+
+                
+            } 
+    
+            homeImg.forEach( (img, i)=> {
+
+                if(i !== prePic){
+                    homeImg[idx].style.zIndex = 100;
+                    img.style.transition = 'none';
+                    img.style.transform = 'scale(1)';
+                    img.style.opacity = 1;          
+                    // img.style.display = 'block'; 
+                }
+            });
+    
+        }, time *2);
+    
+    
+    }, time *2 + 200);
+    // ===============================================================
+
+// homeImg.forEach((img, i)=> {
+//     img.style.transition = `all ${time} linear`;
+//     img.style.zIndex = homeImg.length - i;
+// });
+
+// homeImg[0].style.zIndex = 100;
+
+// setInterval(()=>{
+
+//     homeImg[i].style.transform = 'scale(1.3)';
+//     homeImg[i].style.opacity = 0;
+    
+//     setTimeout(() => {
+//         homeImg[i].style.display = 'none';
+        
+//     }, time + 1100);
+
+
+// }, time + 1000);
+
+//===================================================================
+// homeImg.forEach( (img, i)=> {
+//     img.style.transition =`all ${time}ms linear`;
+//     img.style.zIndex = homeImg.length - i;
+//     homeImg[0].style.zIndex = 100;
+// });
+
+// setInterval(()=> {
+
+//     homeImg[idx].style.transform = 'scale(1.3)';
+//     homeImg[idx].style.opacity = '0';
+
+//     setTimeout( ()=>{
+
+//         homeImg[idx].style.display = 'none';
+//         let prePic =  idx;
+
+
+//         homeImg[prePic].style.zIndex = 0;
+
+//         idx++;
+//         if(idx >= homeImg.length){    
+//             idx=0;    
+//         } 
+
+//         homeImg.forEach( (img, i)=> {
+//             if(i !== prePic){
+//                 img.style.zIndex = homeImg.length - i;  
+//                 homeImg[idx].style.zIndex = 100;
+//                 img.style.transform = 'scale(1)';
+//                 img.style.opacity = 1;          
+//                 img.style.display = 'block'; 
+ 
+//             }
+//         });
+
+//     }, time + 100);
+
+
+// }, time + 200);
+
 
     // contents fade in 
-
 
     document.addEventListener('scroll', ()=> {
 
@@ -115,16 +190,16 @@ setTimeout(() => {
  
         }
 
-        if(window.scrollY > safetyWrap.getBoundingClientRect().bottom + 400){
+        if(window.scrollY > worksWrap.getBoundingClientRect().bottom){
 
-            worksWrap.style.transition = 'all 600ms ease-in';           
+            worksWrap.style.transition = 'all 400ms ease-in';           
             worksWrap.style.transform = 'translateY(0)';
             worksWrap.style.opacity = 1;
 
         }
         else {
 
-            worksWrap.style.transition = 'all 500ms ease-in';  
+            worksWrap.style.transition = 'all 400ms ease-in';  
             worksWrap.style.transform = 'translateY(80px)';
             worksWrap.style.opacity = 0.4;
  
