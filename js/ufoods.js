@@ -1,8 +1,7 @@
 'use strict';
 
-import {toggleClick} from "./mobile.js";
-import {headerLogoShow, contentsFadeIn, homeIntroMove, homeImgShow,imgBtnMove, toTheTop} from "./pc.js";
-
+import {toggleClick} from "./mobile.js";      
+import {headerLogoShow, homeIntroMove, homeImgShow, contentsFadeIn, imgBtnMove, toTheTop} from "./pc.js";
 
 // function mediaSize() { 
 //     if ( window.matchMedia('(min-width: 320px) and (max-width: 767px)').matches ) {
@@ -38,6 +37,8 @@ import {headerLogoShow, contentsFadeIn, homeIntroMove, homeImgShow,imgBtnMove, t
 // window.addEventListener('resize', mediaSize);
 
 // mediaSize();
+
+// console.log( toTheTop );
 
 
 

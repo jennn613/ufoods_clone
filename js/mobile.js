@@ -4,7 +4,7 @@ const toggleBtn = document.querySelector('.header_toggle_btn'); //toggle
 const toggleBtnLine = toggleBtn.querySelectorAll('div'); //toggle 막대기
 const toggleMenu = document.querySelector('.header_toggle_btn_open'); // toggle menu wrap
 
-export function toggleClick(){
+function toggleClick(){
     toggleBtn.addEventListener('click', ()=> {
 
 let a = window.getComputedStyle(toggleMenu).display === 'none';
@@ -49,3 +49,5 @@ let a = window.getComputedStyle(toggleMenu).display === 'none';
     }
 });
 }
+
+export  {toggleClick};

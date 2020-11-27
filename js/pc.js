@@ -11,7 +11,7 @@ const newsWrap = document.querySelector('.article_news'); // news wrap
 const worksWrap = document.querySelector('.article_works'); // works wrap
 const imgBtn = document.querySelectorAll('.imgBtn'); //img button
 
-export function headerLogoShow(){
+function headerLogoShow(){
     document.addEventListener('scroll', () => {
     if(window.scrollY >  newsWrap.getBoundingClientRect().height){
 
@@ -29,7 +29,7 @@ export function headerLogoShow(){
 }
     
 
-export function homeIntroMove(){
+function homeIntroMove(){
 
     homeIntro.addEventListener('mouseenter', ()=> {
  
@@ -50,15 +50,15 @@ export function homeIntroMove(){
 //1. scale(1.2) > 2.opacity 0.2 & 다른 사진 미리 뒤에 보여야함 > 3. 다른 사진 z-index 주기  
 // 반복
 
-    const homeImgWrap = document.querySelector('.homeImg'); // img 감싼 div
-    const homeImg = homeImgWrap.querySelectorAll('.home_background_img'); // 배경 이미지 삽입할 div
-    const indicatorWrap = document.querySelector('.home_img_indicator_wrap'); //indi 감싼 ul
-    const indicator = indicatorWrap.querySelectorAll('li'); //indicator
-    let picNum = 4; //home 사진 개수
-    let idx = 0;
-    let time = 2000;
+const homeImgWrap = document.querySelector('.homeImg'); // img 감싼 div
+const homeImg = homeImgWrap.querySelectorAll('.home_background_img'); // 배경 이미지 삽입할 div
+const indicatorWrap = document.querySelector('.home_img_indicator_wrap'); //indi 감싼 ul
+const indicator = indicatorWrap.querySelectorAll('li'); //indicator
+let picNum = 4; //home 사진 개수
+let idx = 0;
+let time = 2000;
 
-    export function homeImgShow(){
+function homeImgShow(){
 
         indicator.forEach((indi)=>{
             indi.classList.remove('active');
@@ -125,8 +125,8 @@ export function homeIntroMove(){
     // contents fade in 
 
 
-    export function contentsFadeIn() {
-document.addEventListener('scroll', ()=> {
+function contentsFadeIn() {
+    document.addEventListener('scroll', ()=> {
 
         if(window.scrollY > newsWrap.getBoundingClientRect().bottom){
 
@@ -161,7 +161,7 @@ document.addEventListener('scroll', ()=> {
 
     }
     
-export function imgBtnMove(){
+function imgBtnMove(){
     imgBtn.forEach((btn)=> {
 
         btn.addEventListener('mouseenter', ()=> {
@@ -183,7 +183,7 @@ export function imgBtnMove(){
     
     //to the top
 
-    export function toTheTop(){
+function toTheTop(){
         const topBtn = document.querySelector('.topBtn');
 
         topBtn.addEventListener('click', (e)=> {
@@ -211,3 +211,6 @@ a.classList.remove('focus');
   });
 
  } */
+
+
+ export  {headerLogoShow, homeIntroMove, homeImgShow, contentsFadeIn, imgBtnMove, toTheTop};
