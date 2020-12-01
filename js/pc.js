@@ -7,23 +7,27 @@ const headerLogoImg = headerLogoA.querySelector('img'); //logo a img
 const homeWrap = document.querySelector('.article_home_img'); //home 
 const homeIntro = document.querySelector('.home_img_company_intro'); //동그라미
 const safetyWrap = document.querySelector('.article_safety'); //safety wrap
-const newsWrap = document.querySelector('.article_news'); // news wrap
+export const newsWrap = document.querySelector('.article_news'); // news wrap
 const worksWrap = document.querySelector('.article_works'); // works wrap
 const imgBtn = document.querySelectorAll('.imgBtn'); //img button
 
 export function headerLogoShow(){
     document.addEventListener('scroll', () => {
     if(window.scrollY >  newsWrap.getBoundingClientRect().height){
-
         headerLogo.classList.remove('showAction');
         headerLogo.classList.add('hideAction');
-
+ 
+        setTimeout(()=>{
+        headerLogoImg.style.display = 'none';
+        }, 60)
     } 
     else {
-
         headerLogo.classList.remove('hideAction');
         headerLogo.classList.add('showAction');
 
+        setTimeout(()=>{
+            headerLogoImg.style.display = 'block';
+            }, 50)
     }
     });
 }

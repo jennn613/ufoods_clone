@@ -1,6 +1,7 @@
 'use strict';
 
 import {toggleClick} from "./mobile.js";
+import {headerMenuShow} from "./tablet.js";
 import {headerLogoShow, contentsFadeIn, homeIntroMove, homeImgShow,imgBtnMove, toTheTop} from "./pc.js";
 
 
@@ -14,9 +15,11 @@ function mediaSize() {
         homeIntroMove();
         imgBtnMove();
         toTheTop();
+        headerMenuShow();
     } else if ( window.matchMedia('(min-width: 768px) and (max-width: 1024px)').matches ) {
         // console.log('Tablet');
         headerLogoShow();
+        headerMenuShow();
         contentsFadeIn();
         homeImgShow();
         homeIntroMove();

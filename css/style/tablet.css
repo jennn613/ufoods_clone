@@ -38,6 +38,15 @@
     width: 30px;
   }
 
+  .header_nav_contacts_icon_list > a > span {
+    display: block;
+    width: auto;
+    height: auto;
+    color: white;
+    font-size: 10px;
+    margin-top: 10px;
+  }
+
   /* home */
 
   .home_img_logo > img {
