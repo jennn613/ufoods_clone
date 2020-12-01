@@ -64,66 +64,66 @@ let time = 2000;
 
 function homeImgShow(){
 
+    indicator.forEach((indi)=>{
+        indi.classList.remove('active');
+    });
+
+    indicator[idx].classList.add('active');
+    
+    let i = 0;
+
+    homeImg.forEach((img, i)=> {
+        img.style.zIndex = homeImg.length - i;
+        homeImg[0].style.zIndex = 100;
+    });
+    
+    setInterval(()=> {        
+        
         indicator.forEach((indi)=>{
             indi.classList.remove('active');
         });
     
         indicator[idx].classList.add('active');
         
-        let i = 0;
+        homeImg[idx].style.transition =`all ${time}ms linear`;
+        homeImg[idx].style.transform = 'scale(1.3)';
+        homeImg[idx].style.opacity = '0';
     
-        homeImg.forEach((img, i)=> {
-            img.style.zIndex = homeImg.length - i;
-            homeImg[0].style.zIndex = 100;
-        });
-        
-        setInterval(()=> {        
-            
-            indicator.forEach((indi)=>{
-                indi.classList.remove('active');
-            });
-        
-            indicator[idx].classList.add('active');
-            
-            homeImg[idx].style.transition =`all ${time}ms linear`;
-            homeImg[idx].style.transform = 'scale(1.3)';
-            homeImg[idx].style.opacity = '0';
-        
-            setTimeout( ()=>{
+        setTimeout( ()=>{
+
+            let prePic =  idx;
+
+            homeImg[prePic].style.zIndex = 0;
     
-                let prePic =  idx;
-    
-                homeImg[prePic].style.zIndex = 0;
-        
-                idx++;
-    
-                if(idx >= homeImg.length -1){
-                    homeImg.forEach((img, i)=>{
-                        img.style.zIndex = homeImg.length - i;
-                    });
-                }
-                      
-    
-    
-                if(idx >= homeImg.length){    
-                    idx=0;
-                    indicator[idx].classList.add('active');
-                } 
-        
-                homeImg.forEach( (img, i)=> {
-                    if(i !== prePic){
-                        homeImg[idx].style.zIndex = 100;
-                        img.style.transition = 'none';
-                        img.style.transform = 'scale(1)';
-                        img.style.opacity = 1;          
-                    }
+            idx++;
+
+            if(idx >= homeImg.length -1){
+                homeImg.forEach((img, i)=>{
+                    img.style.zIndex = homeImg.length - i;
                 });
-        
-            }, time * 2);
-        
-        
-        }, time * 2 + 200);
-    }
+            }
+                  
+
+
+            if(idx >= homeImg.length){    
+                idx=0;
+                indicator[idx].classList.add('active');
+            } 
+    
+            homeImg.forEach( (img, i)=> {
+                if(i !== prePic){
+                    homeImg[idx].style.zIndex = 100;
+                    img.style.transition = 'none';
+                    img.style.transform = 'scale(1)';
+                    img.style.opacity = 1;          
+                }
+            });
+    
+        }, time * 2);
+    
+    
+    }, time * 2 + 200);
+}
    
 
     // contents fade in 

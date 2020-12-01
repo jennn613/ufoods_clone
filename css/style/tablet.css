@@ -88,16 +88,8 @@
   }
   /* safety */
 
-  .safety_text {
-    margin: 120px 0 120px 50px;
-  }
-
   .safety_text > a > img {
     width: 170px;
-  }
-
-  .safety_img {
-    margin-right: 50px;
   }
 
   /* works */

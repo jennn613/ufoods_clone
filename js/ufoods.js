@@ -60,6 +60,10 @@ const Resize = function () {
         {
             type = deviceSize[i].type;
             toggleClick();
+            homeImgShow();
+            homeIntroMove();
+            contentsFadeIn();
+            toTheTop();
             break;
         }
         else if (window.matchMedia('(min-width: 768px) and (max-width: 1024px)').matches)
