@@ -62,17 +62,7 @@ const Resize = function () {
             toggleClick();
             break;
         }
-        else
-        {
-            type = deviceSize[deviceSize.length - 1].type;
-            headerLogoShow();
-            contentsFadeIn();
-            homeImgShow();
-            homeIntroMove();
-            imgBtnMove();
-            toTheTop();
-            headerMenuShow();
-        } else if (window.matchMedia('(min-width: 768px) and (max-width: 1024px)').matches)
+        else if (window.matchMedia('(min-width: 768px) and (max-width: 1024px)').matches)
         {
             // console.log('Tablet');
             headerLogoShow();
@@ -84,6 +74,17 @@ const Resize = function () {
             imgBtnMove();
             toTheTop();
         }
+        else
+        {
+            type = deviceSize[deviceSize.length - 1].type;
+            headerLogoShow();
+            contentsFadeIn();
+            homeImgShow();
+            homeIntroMove();
+            imgBtnMove();
+            toTheTop();
+            headerMenuShow();
+        } 
     }
     return type;
 }
@@ -98,6 +99,7 @@ window.addEventListener('resize', () => {
     }
     toggleClick();
     headerLogoShow();
+    headerMenuShow();
     contentsFadeIn();
     homeIntroMove();
     homeImgShow();
