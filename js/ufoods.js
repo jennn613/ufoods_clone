@@ -67,7 +67,6 @@ const Resize = function () {
             type = deviceSize[deviceSize.length - 1].type;
             headerLogoShow();
             contentsFadeIn();
-<<<<<<< HEAD
             homeImgShow();
             homeIntroMove();
             imgBtnMove();
