@@ -1,3 +1,4 @@
+
 /* nav */
 .header_nav {
   width: auto;
@@ -305,19 +306,19 @@
 }
 
 .home_background_img:first-of-type {
-  background-image: url("../img/banner-01.jpg");
+  background-image: url("../../img/banner-01.jpg");
 }
 
 .home_background_img:nth-of-type(2) {
-  background-image: url("../img/banner-02.jpg");
+  background-image: url("../../img/banner-02.jpg");
 }
 
 .home_background_img:nth-of-type(3) {
-  background-image: url("../img/banner-03.jpg");
+  background-image: url("../../img/banner-03.jpg");
 }
 
 .home_background_img:last-of-type {
-  background-image: url("../img/banner-04.jpg");
+  background-image: url("../../img/banner-04.jpg");
 }
 
 /* news */
