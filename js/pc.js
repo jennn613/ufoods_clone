@@ -64,7 +64,7 @@ let time = 2000;
 
 function homeImgShow(){
 
-    indicator.forEach((indi)=>{
+        indicator.forEach((indi)=>{
         indi.classList.remove('active');
     });
 
@@ -122,7 +122,7 @@ function homeImgShow(){
         }, time * 2);
     
     
-    }, time * 2 + 200);
+    }, time *  2 + 200);
 }
    
 

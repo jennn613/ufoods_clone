@@ -63,6 +63,7 @@ const Resize = function () {
             homeImgShow();
             homeIntroMove();
             contentsFadeIn();
+            imgBtnMove();
             toTheTop();
             break;
         }
